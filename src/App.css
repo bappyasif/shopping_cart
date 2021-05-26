@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.routerNav {
+  background-color: lightseagreen;
+  color: silver;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navLinks {
+  list-style: none;
+}
+
+.navs {
+  color: whitesmoke;
+}
+
+/* .cart {
+  text-align: right;
+  position: sticky;
+} */
+
+.cart {
+  display: flex;
+  position: sticky;
+  /* justify-content: safe; */
+  
+  align-items: center;
+  /* align-items: stretch; */
+  
+  border: solid;
+  /* direction: rtl; */
+  /* flex-direction: row; */
+  width: max-content;
+  margin: auto;
+  /* float: right; */
+  
+}
+
+.items {
+  color: red;
+  justify-content: flex-end;
+  /* align-self: center; */
+  /* flex: 1; */
+  /* margin-left: 47%; */
+}
+
+.costs {  
+  /* flex: 1; */
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+button {
+  justify-content: flex-end;
+}
+
+.cartConatiner{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
