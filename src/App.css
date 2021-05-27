@@ -59,6 +59,41 @@ button {
 
 .cartConatiner{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* justify-content: space-between; */
+}
+
+.productsView {
+  /* display: flex; */
+  width: 20vw;
+  height: 56vw;
+  /* justify-content: space-evenly; */
+ margin-bottom: 4px;
+  margin: auto;
+  /* flex-direction: column; */
+}
+
+.productsView img, .categoryView img {
+  width: 83%;
+  height: 65%;
+}
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.categoriesView, .categoryView {
+  width: 35%;
+}
+
+.productView {
+  width: 50vw;
+  margin: auto;
+}
+
+.productView img {
+  width: 47%;
+  height: 47%;
 }

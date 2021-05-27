@@ -28,7 +28,33 @@ module.exports = {
         // use: {
         //   loader: ["style-loader", "css-loader"]
         // }
+      },
+      {
+        test: /\.(svg|png|jpg|jpeg|gif)$/,
+        type: "aaset/resource"
       }
+      // {
+      //   test: /\.(svg|png|jpg|jpeg|gif)$/,
+      //   include: "./src/images/",
+      //   // include: "/home/abappy/Documents/odin project/React Workouts/assignments/Shopping_Cart/src/images",
+      //   // include: "src/images/",
+      //   // loader: "file-loader",
+      //   use: {
+      //     loader: "file-loader",
+      //     options: {
+      //       name: "[path][name].[ext]",
+      //       outputPath: "./images/"
+      //     }
+      //   }
+      // }
+      // {
+      //   test: /\.(svg|png|jpg|jpeg|gif)$/,
+      //   use: [
+      //     {
+      //       loader: "url-loader"
+      //     }
+      //   ]
+      // }
     ],
   },
   plugins: [
