@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         test: /\.(svg|png|jpg|jpeg|gif)$/,
-        type: "aaset/resource"
+        type: "asset/resource"
       }
       // {
       //   test: /\.(svg|png|jpg|jpeg|gif)$/,

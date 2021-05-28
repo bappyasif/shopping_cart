@@ -18,7 +18,7 @@ export function Cart() {
         currently you have <span>{cartContext.items} </span> many items
       </p>
       <p className="costs">
-        total cost: <span>$ {cartContext.cost}</span>
+        total cost: $<span> {cartContext.cost}</span>
       </p>
       <button onClick={handleCheckout}>Checkout</button>
     </div>

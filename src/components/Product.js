@@ -3,14 +3,19 @@ import { CartContext } from "../router/CartRoutes";
 
 export function Product(match) {
   let [product, setProduct] = useState({});
+  let [loading, setLoading] = useState(false);
+
   useEffect(() => fetchingProduct(), []);
+
   let fetchingProduct = () => {
+    setLoading(true);
     let url = `https://fakestoreapi.com/products/${match.match.params.prodID}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
         setProduct(data);
+        setLoading(false);
       })
       .catch((err) => console.log(err));
   };
@@ -41,9 +46,18 @@ export function Product(match) {
   );
   return (
     <div>
-      <h4>Product Details</h4>
-
-      {displayProduct}
+      {!loading ? <h4>Product Details</h4> : false}
+      {loading ? (
+        <div>
+          {" "}
+          <div style={{ marginBottom: "11px" }}>
+            Loading Product Details Here
+          </div>{" "}
+          <div className="loading"></div>
+        </div>
+      ) : (
+        displayProduct
+      )}
     </div>
   );
 }

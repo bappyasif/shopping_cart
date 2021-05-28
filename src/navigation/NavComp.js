@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Logo from "../images/onlineShop.svg";
 export function NavComp() {
   return (
     <ul className="routerNav">
-      <p style={{ marginRight: "40%" }}>Navigation</p>
+      <p className="logoText"><img className="logo" src={Logo} />Your Online Shopping Companion</p>
       <li className="navLinks">
         <Link to="/" className="navs">
           Home
